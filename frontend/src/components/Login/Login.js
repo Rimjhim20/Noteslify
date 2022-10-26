@@ -116,7 +116,7 @@ const Login = () => {
 
                     <div className="form__div-input">
                         <label htmlFor="" className="form__label">Password</label>
-                        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} name="password" className="form__input" id="password"/>
+                        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} name="password" minLength="6" maxLenght="24" className="form__input" id="password"/>
                     </div>
                 </div>
                 <Link to="/forgotpassword" className="form__forgot">Forgot Password?</Link>
